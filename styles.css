@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0  ;
+}
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+@font-face {
+  font-family: 'Rostov';
+  src: url(fons\Rostov.ttf);
+}
+
+.header{
+  display: flex;
+}
+.top-menu {
+  background: #00000096;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin-left: -20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {
+  display: inline-block;
+  margin-left: 15px;
+}
+.menu-main {
+  list-style: none;
+  margin-right: 15px;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #050505;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+/* TEXT POVERH FOTO */
+.textImg1 {
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+  /* background-color: #636262; */
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+}
+.textImg3{
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+  /* background-color: #636262; */
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 50px; 
+  color: #850101; 
+}
+.textImg4{
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+  /* background-color: #636262; */
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 490px;
+  margin-left: 630px; 
+  color: #ffffff;
+  /* opacity: 0.5;  */
+}
+.textImg5{
+  position: absolute;
+  bottom: 100px;
+  left: 16px;
+  /* background-color: #636262; */
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 90px;
+  margin-left: 820px; 
+  color: #000000;
+  /* opacity: 0.5;  */
+}
+.fonnn{
+  background-color: rgba(128, 128, 128, 0.75);
+  /* opacity: 0.5; */
+}
+
+/* KNOPKA PODROBNEE */
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.myImg {
+    width: 100%;
+    height: 50%;
+  }
+
+.osnova{
+  /* margin-left: 20px; */
+  margin-top: -10px;
+}
+
+.assrtiment{
+  background-color: rgb(48, 48, 48);
+  margin: 0;
+  padding: 0;
+}
+.assrtiment p{
+  font-family: 'Rostov';
+  /* font-size: 30px; */
+  color: #ffffff;
+  text-decoration: none;
+}
+.brand-text-center{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 45px;
+}
+.assrtiment a{
+  text-decoration: none;
+}
+.assrtiment img{
+  margin-left: 60px;
+}
+.brand-text{
+  margin-left: 100px;
+  font-size: 30px;
+}
+.brand-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+
+
+
+/* PODVAL */
+
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+
+
+
+
+
+.vse-kontakti{
+  background-color: rgb(48, 48, 48);
+}
+.textglav{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'Rostov';
+}
+
+.bbggvv{
+  background-color: rgb(48, 48, 48);
+}
+.textpolitika{
+  font-family: 'Rostov';
+  color: white;
+  margin-top: -5px;
+  font-size: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.textpolitika p{
+  margin-bottom: 35px;
+}
+
+.textkontakti{
+  text-align: center;
+  font-size: 28px;
+  background-color: rgb(48, 48, 48);
+  color: #ffffff;
+}
+.textkontakti1{
+  display:inline;
+  width:auto;
+}
+.textkontakti2{
+  display:inline;
+  width:auto;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.textkontakti3{
+  display:inline;
+  width:auto;
+}
+
+
+
+
+/* KALKULATOR */
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.calculateBtn {
+  background-color: #414141;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calculateBtn:hover {
+  background-color: #181918;
+}
+
+.result {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.result p {
+  font-size: 25px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.sum {
+  color: #414141;
+  font-weight: bold;
+}
+
+.sum::after {
+  content: "\20BD";
+  margin-left: 5px;
+}

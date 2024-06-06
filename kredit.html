@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АрмАвтосалон</title>
+    <link type="image/x-icon" rel="shortcut icon" href="img\32x32-imageeee.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="">
+        <nav class="top-menu">
+            <a class="navbar-logo" href="index.html"><img src="img\imageeee.png"></a>
+            <ul class="menu-main">
+              <li><a href="index.html">Ассортимент Авто</a></li>
+              <li><a href="okompanii.html">О Компании</a></li>
+              <li><a href="">Автокредит</a></li>
+              <li><a href="kontakti.html">Контакты</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <div class="textImg">
+        <img src="img\2020911front.jpg" class="myImg">
+        <div class="textImg5">
+            <div class="fonnn">
+            <h2>Расчет кредита</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bbggvv">
+        <div class="textpolitika">
+            <form id="loan-form">
+                <label>Сумма кредита:</label>
+                <input
+                  type="number"
+                  id="amount"
+                  placeholder="Введите сумму кредита"
+                  required
+                />
+              
+                <label>Процентная ставка:</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  id="interest"
+                  placeholder="Введите процентную ставку"
+                  required
+                />
+              
+                <label>Срок погашения:</label>
+                <input
+                  type="number"
+                  id="months"
+                  placeholder="Введите срок погашения в годах"
+                  required
+                />
+              
+                <button class="calculateBtn" onclick="calculateLoan()" type="button">Рассчитать</button>
+              </form>
+              
+              <!-- Раздел результатов кредитного калькулятора -->
+              <div id="result" class="result"></div>
+        </div>
+</div>
+</div>
+<footer>
+    <div class="footer">
+    <div class="row">
+    <a href="https://vk.com/sergey_aleksandrov123"><i class="fa fa-vk"></i></a>
+    <a href="https://www.youtube.com/channel/UCaQEpF7bcLBkqBNrFbcAAWA"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="kontakti.html">Контакты</a></li>
+    <li><a href="okompanii.html">О Компании</a></li>
+    <li><a href="politikakonfi.html">Политика Конфиденциальности</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    INFERNO Copyright © 2024 Inferno - All rights reserved || Designed By: Sergey 
+    </div>
+    </div>
+    </footer>
+</body>
+</html>
